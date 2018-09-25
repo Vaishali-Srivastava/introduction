@@ -1,0 +1,99 @@
+
+/********* Responsive ********/
+@media screen and (max-width: 1900px){
+ .quad-angles .mouseover-visible-wrap
+  {
+      visibility: hidden;
+      background-size: cover!important;
+  } 
+}
+
+@media screen and (max-width: 1450px){
+  .lp-topbar .col-md-3{
+    width: 20%;
+  }
+  .lp-topbar .col-md-5{
+    width: 46.66666667%;
+  }
+
+  /* View Details */
+  .slider-wrapper .owl-theme .owl-controls {
+      right: 172px;
+  }
+  .slider-wrapper .owl-theme .owl-controls .owl-buttons .owl-prev {
+      position: relative;
+      left: -70px;
+  }
+  .slider-wrapper .owl-theme .owl-controls .owl-buttons .owl-next {
+      position: relative;
+      right: -70px;
+  }
+  /* View Details */
+
+}
+@media screen and (max-width: 1466px){
+  .lp-topbar .col-md-3{
+    width: 20%;
+  }
+  .lp-topbar .col-md-5{
+    width: 46.66666667%;
+  }
+  body.Edge .quad-angles{
+    height: calc(25% + 2px);
+  }
+  body.Edge .hex-wrap .hexagon{
+    width: 24vw;
+    height: calc(24vw * 0.57735026919);
+  }
+  .user-tabs .nav>li>a {
+      min-height: 62px;
+      display: flex;
+      align-items: center;
+  }
+  .moreFilterType .menu_component_dropdown{
+    left: inherit;
+    right: calc(12% + 3px);
+  }
+  .moreFilterType .menu_component_dropdown:before{
+      left: inherit;
+      right: 40px;
+  }
+  .moreFilterType .menu_component_dropdown:after{
+      left: inherit;
+      right: 41px;
+  }
+}
+
+@media screen and (max-width: 1280px){
+  .lp-topbar .col-md-3{
+    width: 18%;
+  }
+  .lp-topbar .col-md-5 {
+    width: 82%;
+    margin-left: 0;
+  }
+  .signUpNew, .signUpNew .modal-body{
+      padding: 50px 50px;
+  }
+  body.Edge .quad-angles{
+    height: calc(25% + 4px);
+  }
+  body.Edge .hex-wrap .hexagon{
+    width: 26vw;
+    height: calc(26vw * 0.57735026919);
+  }
+
+}
+
+@media screen and (max-width: 991px){
+  .hp-widget--right {
+      width: calc(100% - 0px);
+  }
+  .searchType {
+      float: left;
+      width: 8%;
+      padding-right: 0px;
+      max-width: 8%;
+  }
+}
+/********* Responsive ********/

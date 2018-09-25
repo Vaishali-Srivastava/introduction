@@ -1,0 +1,92 @@
+<!-- Modal -->
+<div class="modal fade walk-through-popup" id="walk-through-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-backdrop="static">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Walk Through</h4>
+      </div>
+      <div class="modal-body">
+        <!-- 16:9 aspect ratio -->
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe id="video" height="530" src="http://www.youtube.com/embed/gX7eJf7vArw" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Forgot Password Popup-->
+<div class="modal fade forgotpassword modal-frontend contact-panel" id="forgot-password" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-backdrop="static">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content modOne">
+            <div class="modal-header border-bottom-none">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <p>Your registered email address is xxxxxx.com.</p>
+                <p class="f-bold">Enter your registered email address.</p>
+            </div>
+            <div id="alert_message1"></div>  
+            <div class="modal-body clearfix">
+                <div class="form-group clearfix">
+                  <div class="col-sm-12">
+                      <input class="form-control input-cols" name="forget_email" id="forget_email" placeholder="Enter Your Email Address" type="email">
+                  </div>  
+                </div>
+                <div class="form-group clearfix mb-0">
+                  <div class="col-sm-12 signUpNew ptb-0 plr-0 text-center">
+                      <button type="button" class="btn btn-sub btn-primary-plans text-uppercase mt-0 mb-0" onclick="Login.verifyEmailAddress();">Continue</button>
+                  </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="modal-content modTwo">
+            <div class="modal-header border-bottom-none">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <p>A 4 digit OTP has been sent to the email address you provided</p>
+            </div>
+            <div class="modal-body clearfix">
+                <div class="form-group clearfix">
+                    <div class="col-sm-12">
+                        <input class="form-control input-cols" name="otp" id="verifyOTP" placeholder="Enter one time password here" type="text">
+                    </div>  
+                </div>
+                <div class="form-group clearfix mb-0">
+                    <div class="col-sm-12 signUpNew ptb-0 plr-0 text-center">
+                        <button type="button" class="btn btn-sub btn-primary-plans text-uppercase mt-0 mb-0" onclick="Login.verifyOTP();">Continue</button>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+        <div class="modal-content modThree">
+            <div class="modal-header border-bottom-none">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            </div>
+            <form id="forgetPassword" method="post">  
+                <div id="alert_message3"></div>  
+                <div class="modal-body clearfix">
+                    <div class="form-group clearfix">
+                        <div class="col-sm-12">
+                            <input class="form-control input-cols" id="fpassword" name="fpassword" value="" placeholder="New Password" type="password">
+                        </div>  
+                    </div>
+                    <div class="form-group clearfix">
+                        <div class="col-sm-12">
+                            <input class="form-control input-cols" id="fcpassword" name="fcpassword" value="" placeholder="Confirm New Password" type="password">
+                        </div>  
+                    </div>
+                    <div class="form-group clearfix mb-0">
+                        <div class="col-sm-12 signUpNew ptb-0 plr-0 text-center">
+                            <button type="button" class="btn btn-sub btn-primary-plans text-uppercase mt-0 mb-0" onclick="Login.resetPassword();">Submit</button>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </form>    
+        </div>
+    </div>
+</div>
+<!-- Forgot Password Popup-->
